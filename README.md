@@ -10,3 +10,6 @@ I also want to retain all of these notes here for future reference.
 - Effective Modern C++ by Scott Meyers
 
 - Effective C++ by Scott Meyers
+
+## The Essays
+- http://www.catb.org/esr/structure-packing/
