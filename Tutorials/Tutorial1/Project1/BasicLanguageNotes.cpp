@@ -1,6 +1,8 @@
 // include iostream from the standard library
 // All code provided by iostream is now accessible for use
 #include<iostream>
+//include string from the standard library
+#include<string>
 
 // using namespace std;
 // this would allow me to forego using std:: every time, however 
@@ -12,13 +14,35 @@
 
 
 // Function Definition (prior to usage)
-int add(int parameterOne, int parameterTwo) {
+int add(int parameterOne, int parameterTwo) 
+{
 	return parameterOne + parameterTwo;
 }
 
-void printNumber(int numberToPrint) {
+void printNumber(int numberToPrint) 
+{
 	std::cout << numberToPrint << std::endl;
 }
+
+void printNumber(int firstNum, int secondNum) 
+{
+	std::cout << firstNum << ","<< secondNum << std::endl;
+}
+
+void printNumber(double numberToPrint)
+{
+	std::cout << numberToPrint << std::endl;
+}
+
+// passing in a reference will mean I am actually modifying that 
+// portion of memory, not copying the value.
+void addOne(int& num) 
+{
+	num++;
+}
+
+// function DECLARATION early in file (just args, return types)
+void addExclaim(std::string& str);
 
 
 // Required entry point for every C++ program. 
@@ -297,8 +321,83 @@ int main()
 		std::cout << "this should be printed 10 times i: " << i << std::endl;
 	}
 
+	// Nesting is supported, but this usually makes algorithms O(n^2) or more
+	// so this is usually a bad idea in real implementations, expensive
+	for (int i = 0; i < 5; i++) 
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			std::cout << "in loop - i: " << i << "  j: " << j << std::endl;
+		}
+	}
+
+	// PASSING BY VALUE
+	int t = 5;
+	std::cout << "t is: " << t << std::endl;
+	add(t, t);
+	std::cout << "t is: " << t << std::endl;
+	t = add(t, t); // this will modify the value because we reassign it
+
+	t = 5;
+	// PASSING BY REFERENCE
+	// a refernce is not a copy or just holding the value
+	// it is actually the memory location, the same exact variable.
+	// can be used to change/effect variables values in other scopes.
+	int& tRef = t;
+	std::cout << "t is: " << t << std::endl;
+	std::cout << "tRef is: " << tRef << std::endl;
+
+	tRef++;
+	std::cout << "t is: " << t << std::endl;
+	std::cout << "tRef is: " << tRef << std::endl;
+
+	addOne(tRef);
+	std::cout << "t is: " << t << std::endl;
+	std::cout << "tRef is: " << tRef << std::endl;
 
 
+	// STRINGS AND ALIASES(references)
+
+	std::string myString = "Hello";
+	std::string& myStringRef = myString;
+
+	std::cout << "My String: " << myString << std::endl;
+	std::cout << "My String Ref: " << myStringRef << std::endl;
+
+	// String concatenation
+	myString += ", ";
+	myStringRef += " There";
+
+	std::cout << "My String: " << myString << std::endl;
+	std::cout << "My String Ref: " << myStringRef << std::endl;
+
+	// accepts a string, uses reference
+	addExclaim(myString);
+	std::cout << "My String: " << myString << std::endl;
+	std::cout << "My String Ref: " << myStringRef << std::endl;
+
+	// also accepts a string reference directly
+	addExclaim(myStringRef);
+	std::cout << "My String: " << myString << std::endl;
+	std::cout << "My String Ref: " << myStringRef << std::endl;
+
+	// but will not work for string literals (const char[]) anymore because
+	// they are constants, cannot be changed.
+	// addExclaim("Woohoo");
+
+	
+	// FUNCTION OVERLOADING
+	// allows you to define a single function, with multiple definitions
+	// dependent on the function arguments
+	// same name, different arguments
+	int jk = 5;
+	int uv = 10;
+	float xw = 4.0;
+
+	// use the int,int overload
+	printNumber(jk, uv);
+	// use the float overload
+	printNumber(xw);
 
 	// Platform specific (and unsafe) hack to keep the console window open.
 	// Uses the Window command-line Pause program and waits for that to terminate
@@ -306,3 +405,7 @@ int main()
 	//system("pause");
 }
 
+// Function DEFINITION contains full function definition
+void addExclaim(std::string& str) {
+	str += "!";
+}
