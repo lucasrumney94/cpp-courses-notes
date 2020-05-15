@@ -1,4 +1,4 @@
-# cpp-courses-notes
+# C++ Courses and Notes
 A collection of annotated examples and notes to demonstrate learnings from C++ Courses. 
 I also want to retain all of these notes here for future reference. 
 
