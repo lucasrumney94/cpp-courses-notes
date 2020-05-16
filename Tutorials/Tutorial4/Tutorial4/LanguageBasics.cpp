@@ -55,7 +55,17 @@ public:
 		std::cout << "A Critter is instantiated!" << std::endl;
 		CritterCount++;
 	}
+	~Critter()
+	{
+		std::cout << "A Critter is deleted!" << std::endl;
+		CritterCount--;
+	}
 	static int CritterCount;
+
+	static void AnnounceCount()
+	{
+		std::cout << CritterCount << std::endl;
+	}
 };
 // initialize the static member outside of the class
 // independent of instantiations of the class
@@ -149,12 +159,22 @@ int main()
 	//Critter::CritterCount = 13;
 	//std::cout << Critter::CritterCount << std::endl;
 
+	Critter::AnnounceCount();
 	Critter myCritter;
 	// because of the increment in the constructor, this will reflect the number of critters
-	std::cout << Critter::CritterCount << std::endl;
+	Critter::AnnounceCount();
 	Critter myCritter2;
 	// because of the increment in the constructor, this will reflect the number of critters
-	std::cout << Critter::CritterCount << std::endl;
+	Critter::AnnounceCount();
+
+	// Dynamically create new critter
+	Critter* crit = new Critter;
+	Critter::AnnounceCount();
+	delete crit;
+	Critter::AnnounceCount();
+
+
+	// STATIC FUNCTIONS WITHIN CLASSES
 
 
 }
