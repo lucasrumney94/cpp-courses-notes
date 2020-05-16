@@ -14,3 +14,7 @@ I also want to retain all of these notes here for future reference.
 
 ## The Essays
 [![Generic badge](https://img.shields.io/badge/Status-Reading-yellow.svg)](https://shields.io/) — http://www.catb.org/esr/structure-packing/
+
+## The Videos
+
+https://www.youtube.com/watch?v=fbYknr-HPYE
