@@ -17,6 +17,8 @@ I also want to retain all of these notes here for future reference.
 
 ## The Videos
 
+lvalues, rvalues, perfect forwarding
 https://www.youtube.com/watch?v=fbYknr-HPYE
 
+Embedding Lua Series
 https://www.youtube.com/watch?v=4l5HdmPoynw
