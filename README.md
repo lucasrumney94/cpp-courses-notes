@@ -18,3 +18,5 @@ I also want to retain all of these notes here for future reference.
 ## The Videos
 
 https://www.youtube.com/watch?v=fbYknr-HPYE
+
+https://www.youtube.com/watch?v=4l5HdmPoynw
