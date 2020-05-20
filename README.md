@@ -17,6 +17,9 @@ I also want to retain all of these notes here for future reference.
 
 ## The Videos
 
+C++ Video Series
+https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb
+
 lvalues, rvalues, perfect forwarding
 https://www.youtube.com/watch?v=fbYknr-HPYE
 
