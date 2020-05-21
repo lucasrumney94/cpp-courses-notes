@@ -23,7 +23,7 @@ I also want to retain all of these notes here for future reference.
 
 ## The Videos
 
-[![Generic badge](https://img.shields.io/badge/Status-Watching-green.svg)](https://shields.io/) — C++ Video Series
+[![Generic badge](https://img.shields.io/badge/Status-Watching-yellow.svg)](https://shields.io/) — C++ Video Series
 https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb
 
 
