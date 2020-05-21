@@ -14,6 +14,9 @@ I also want to retain all of these notes here for future reference.
 
 [![Generic badge](https://img.shields.io/badge/Status-TODO-red.svg)](https://shields.io/) — Game Engine Architecture by Scott Meyers
 
+[![Generic badge](https://img.shields.io/badge/Status-TODO-red.svg)](https://shields.io/) — Code Complete by Steve McConnell
+
+
 
 ## The Essays
 [![Generic badge](https://img.shields.io/badge/Status-Reading-yellow.svg)](https://shields.io/) — http://www.catb.org/esr/structure-packing/
