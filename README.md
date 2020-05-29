@@ -11,7 +11,7 @@ The primary purpose of this repository is make sure that my knowledge stays up t
 ## The Books
 [![Generic badge](https://img.shields.io/badge/Status-TODO-red.svg)](https://shields.io/) — Effective Modern C++ by Scott Meyers
 
-[![Generic badge](https://img.shields.io/badge/Status-TODO-red.svg)](https://shields.io/) — Effective C++ by Scott Meyers
+[![Generic badge](https://img.shields.io/badge/Status-Reading-yellow.svg)](https://shields.io/) — Effective C++ by Scott Meyers
 
 [![Generic badge](https://img.shields.io/badge/Status-TODO-red.svg)](https://shields.io/) — Game Engine Architecture by Scott Meyers
 
