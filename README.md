@@ -1,6 +1,7 @@
 # C++ Courses and Notes
 A collection of annotated examples and notes to demonstrate my learnings from C++ Courses. 
 I also want to retain all of these notes here for future reference.
+The primary purpose of this repository is make sure that my knowledge stays up to date with C++17 and future C++ standards. 
 
 ## The Courses
 [![Generic badge](https://img.shields.io/badge/Status-Complete-green.svg)](https://shields.io/) — Learning C++ for Game Development ( https://www.udemy.com/course/learn-cpp-for-ue4-unit-1/ )
